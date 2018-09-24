@@ -1,3 +1,11 @@
+docker-php7.2.10-kitematic
+==========================
+Changes:
+- PHP 7.2.10 Update and updates from https://github.com/tutumcloud/apache-php
+- PHP Error to output (not Apache log)
+
+
+
 docker-php-kitematic
 ================
 
