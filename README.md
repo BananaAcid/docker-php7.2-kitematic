@@ -18,6 +18,10 @@ You can read up on how to do this here:
 
     https://kitematic.com/docs/
 
+if you have trouble finding it, to make it available in Kitematic and docker, you can use:
+
+	docker pull bananaacid/docker-php7_2-kitematic
+
 
 Manual usage
 ------------------------------------
