@@ -2,6 +2,8 @@
 
 Simple docker image optimised for Kitematic to run PHP 7.2-latest applications on Apache with an external path, easy to setup.
 
+![screenshot 2018-09-26](https://user-images.githubusercontent.com/1894723/46049477-e043db80-c12e-11e8-9609-c5c8aa3b08b8.png)
+
 Based on the work of:
 
 * Phil Plückthun, 'docker-php-kitematic'
