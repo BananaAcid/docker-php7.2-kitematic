@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello world</title>
+	<title>&lt;hello-world /&gt;</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<style>
 	body {
@@ -69,7 +69,7 @@
 		<?php
 		}
 		?>
-		<a href="info.php">PHP <?=sprintf('%d.%d.%d', PHP_MAJOR_VERSION, PHP_MINOR_VERSION, PHP_RELEASE_VERSION)?> info</a> &mdash; <a href="https://github.com/BananaAcid/docker-php7.2-kitematic" target="_blank">readme on github</a>
+		<a href="info.php">PHP <?=sprintf('%d.%d.%d', PHP_MAJOR_VERSION, PHP_MINOR_VERSION, PHP_RELEASE_VERSION)?> info</a> &mdash; <a href="https://github.com/BananaAcid/docker-php7.2-kitematic" target="_blank">readme on github</a> &mdash; <a href="getcert.php">localhost certificate</a>
 	</main>
 </body>
 </html>
