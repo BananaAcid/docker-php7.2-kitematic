@@ -4,12 +4,6 @@ Simple docker image optimised for Kitematic to run PHP 7.2-latest applications o
 
 ![screenshot 2018-09-26](https://user-images.githubusercontent.com/1894723/46049477-e043db80-c12e-11e8-9609-c5c8aa3b08b8.png)
 
-Based on the work of:
-
-* Phil Plückthun, 'docker-php-kitematic'
-* Fernando Mayo <fernando@tutum.co>, 'apache-php'
-
-------------------------------------
 ## Intended workflow
 
 1. install docker
@@ -103,7 +97,12 @@ If you get an error telling you `SSLCertificateFile: file '/ssl-cert/server.pem'
 ----------------------------------
 # Improvements
 
-over docker-php-kitematic
+Based on the work of:
+
+* Phil Plückthun, 'docker-php-kitematic'
+* Fernando Mayo <fernando@tutum.co>, 'apache-php'
+
+... over docker-php-kitematic
 ----------------------------------
 
 The following things were added/changed:
@@ -116,7 +115,7 @@ The following things were added/changed:
 
 
 
-over apache-php
+... over apache-php
 ----------------------------------
 
 This fork was optimised to support Kitematic.
