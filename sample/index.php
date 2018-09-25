@@ -69,7 +69,7 @@
 		<?php
 		}
 		?>
-		<a href="info.php">PHP <?=sprintf('%d.%d.%d', PHP_MAJOR_VERSION, PHP_MINOR_VERSION, PHP_RELEASE_VERSION)?> info</a>
+		<a href="info.php">PHP <?=sprintf('%d.%d.%d', PHP_MAJOR_VERSION, PHP_MINOR_VERSION, PHP_RELEASE_VERSION)?> info</a> &mdash; <a href="https://github.com/BananaAcid/docker-php7.2-kitematic" target="_blank">readme on github</a>
 	</main>
 </body>
 </html>

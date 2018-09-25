@@ -3,7 +3,7 @@ MAINTAINER Nabil Redmann (BananaAcid) <repo@bananaacid.de>
 LABEL version="1.0"
 LABEL description="Fixed for Apache 2 + PHP 5 \
 With support for external app folder. Using Ubuntu."
-LABEL git="https://github.com/BananaAcid/docker-php7_2-kitematic"
+LABEL git="https://github.com/BananaAcid/docker-php7.2-kitematic"
 
 # Install base packages
 RUN apt-get update && \

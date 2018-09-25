@@ -1,4 +1,4 @@
-# docker-php7_2-kitematic
+# docker-php7.2-kitematic
 
 Simple docker image optimised for Kitematic to run PHP 7.2-latest applications on Apache with an external path, easy to setup.
 
@@ -8,11 +8,11 @@ Based on the work of:
 * Fernando Mayo <fernando@tutum.co>, 'apache-php'
 
 
-## Installation
 ------------------------------------
+## Installation
 It is recommended to use this image with Kitematic.
 
-In Kitematic, press `+ New` and search for `docker-php7_2-kitematic`.
+In Kitematic, press `+ New` and search for `docker-php7.2-kitematic`.
 
 You can read up on how to do this here:
 
@@ -20,7 +20,7 @@ You can read up on how to do this here:
 
 if you have trouble finding it, to make it available in Kitematic and docker, you can use:
 
-	docker pull bananaacid/docker-php7_2-kitematic
+	docker pull bananaacid/docker-php7.2-kitematic
 
 
 Manual usage
@@ -28,15 +28,15 @@ Manual usage
 
 To grap it from the online repository and use it:
 
-	docker run -p 8000:80 --volume ~/my-php-app:/all  bananaacid/docker-php7_2-kitematic
+	docker run -p 8000:80 --volume ~/my-php-app:/all  bananaacid/docker-php7.2-kitematic
 
 to control it with Kitematic, use:
 
-	docker run -d -p 8000:80  bananaacid/docker-php7_2-kitematic
+	docker run -d -p 8000:80  bananaacid/docker-php7.2-kitematic
 
 * `-d` will run it in the background, other wise, all container output goes to the current console. 
-* `~/my-php-app`referes to the user folder from where the php files should be used - can be activated in Kitematic. 
-* `--name my-php-app_container` before the image name, will create a container with a meaningful name.
+* `~/my-php-app`referes to the user folder from where the php files should be used - can also be activated within in Kitematic. 
+* `--name my-php-app_container` added before the image name, will create a container with a meaningful name.
 
 
 Enable .htaccess files
@@ -44,15 +44,15 @@ Enable .htaccess files
 
 If you app uses .htaccess files you need to pass the ALLOW_OVERRIDE environment variable
 
-    docker run -d -p 80:80 -e ALLOW_OVERRIDE=true bananaacid/docker-php7_2-kitematic
+    docker run -d -p 80:80 -e ALLOW_OVERRIDE=true bananaacid/docker-php7.2-kitematic
 
 or set it in Kitematic `Settings -> General -> Environment Variables`.
 
 
 
 
-# Improvements
 ----------------------------------
+# Improvements
 
 over docker-php-kitematic
 ----------------------------------
