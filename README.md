@@ -8,23 +8,22 @@ Based on the work of:
 * Fernando Mayo <fernando@tutum.co>, 'apache-php'
 
 ------------------------------------
-## intended workflow
+## Intended workflow
 
 1. install docker
 2. get going with this readme
-
 3. place your PHP files in connected folder on your computer to be used by the container
+
+...
+
 4. start the container (e.g. in Kitematic)
+5. edit your files, use git or alike
+6. reload your browser
 
 ...
 
-4. edit your files, use git or alike
-5. reload your browser
-
-...
-
-6. stop the container
-7. turn off your computer
+7. stop the container
+8. turn off your computer
 
 ------------------------------------
 ## Installation
