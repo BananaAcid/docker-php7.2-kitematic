@@ -7,9 +7,28 @@ Based on the work of:
 * Phil Plückthun, 'docker-php-kitematic'
 * Fernando Mayo <fernando@tutum.co>, 'apache-php'
 
+------------------------------------
+## intended workflow
+
+1. install docker
+2. get going with this readme
+
+3. place your PHP files in connected folder on your computer to be used by the container
+4. start the container (e.g. in Kitematic)
+
+...
+
+4. edit your files, use git or alike
+5. reload your browser
+
+...
+
+6. stop the container
+7. turn off your computer
 
 ------------------------------------
 ## Installation
+
 It is recommended to use this image with Kitematic.
 
 In Kitematic, press `+ New` and search for `docker-php7.2-kitematic` and press its `create` button.
