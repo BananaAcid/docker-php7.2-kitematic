@@ -109,9 +109,10 @@ The following things were added/changed:
 
 * PHP 7.2 Update, with FastCGI
 * all apache / php logs are visible to the console
-* intro page has a link to an added phpinfo file
-* revamped the default placeholder to be more generic
+* revamped the default webpage placeholder to be more generic
+* webpage placeholder has a link to an added phpinfo file
 * makefile configured to be used for building the image and testing it
+* SSL added, certificates are exchangeable
 
 
 
