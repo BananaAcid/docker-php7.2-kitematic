@@ -6,7 +6,7 @@ Simple docker image optimised for Kitematic to run PHP 7.2-latest applications o
 
 ## Intended workflow
 
-1. install docker
+1. install docker (and within its menu, Kitematic)
 2. get going with this readme
 3. place your PHP files in connected folder on your computer to be used by the container
 
