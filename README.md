@@ -93,6 +93,16 @@ If you get an error telling you `SSLCertificateFile: file '/ssl-cert/server.pem'
 2. Kitematic: remove the volume's local folder - Settings -> Volumes -> click the remove button next to `/ssl-cert`
 3. command line: remove your `--volume ???:/ssl-cert` param
 
+----------------------------------
+# Direct download links (official)
+
+No docker registration required.
+
+Windows
+https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe
+
+MAC
+https://download.docker.com/mac/stable/Docker.dmg
 
 ----------------------------------
 # Improvements
