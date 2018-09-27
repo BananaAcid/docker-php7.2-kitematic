@@ -28,6 +28,16 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -yq install \
     php-pear php-apc \
     libapache2-mod-php7.2
 
+# configure pecl + pear
+RUN pecl config-set php_ini /etc/php/7.2/apache2/php.ini && pear config-set php_ini /etc/php/7.2/apache2/php.ini
+
+# xdebug config - "True"|"true"|"TRUE"|"1"|"on" will write the correct positive value into the config -- and remove crap line, since we use a config file
+RUN pecl install xdebug && sed -i "s/zend_extension=\"xdebug.so\"//g" /etc/php/7.2/apache2/php.ini
+ENV XDEBUG_ENABLE False
+ENV XDEBUG_AUTOSTART False
+ENV XDEBUG_IDEKEY *complex*
+EXPOSE 9001
+
 #RUN DEBIAN_FRONTEND=noninteractive apt-get -yq install libmcrypt-dev gcc make autoconf libc-dev pkg-config && \
 #    pecl install mcrypt-1.0.1 && echo "extension=mcrypt.so" | tee -a /etc/php/7.2/apache2/conf.d/mcrypt.ini && \
 #    /usr/sbin/phpenmod mcrypt

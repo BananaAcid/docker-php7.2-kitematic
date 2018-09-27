@@ -74,7 +74,7 @@ Enable .htaccess files
 
 If you app uses .htaccess files you need to pass the ALLOW_OVERRIDE environment variable
 
-    docker run -d -p 80:80 -e ALLOW_OVERRIDE=true bananaacid/docker-php7.2-kitematic
+    docker run -d -p 8000:80 -e ALLOW_OVERRIDE=true bananaacid/docker-php7.2-kitematic
 
 or set it in Kitematic `Settings -> General -> Environment Variables`.
 
@@ -93,6 +93,24 @@ If you get an error telling you `SSLCertificateFile: file '/ssl-cert/server.pem'
 2. Kitematic: remove the volume's local folder - Settings -> Volumes -> click the remove button next to `/ssl-cert`
 3. command line: remove your `--volume ???:/ssl-cert` param
 
+
+Using Xdebug
+------------------------------------
+
+Xdebug documentation is available all over the internet. Please refer to these sources.
+
+The current options are set by environment variables
+
+* XDEBUG_ENABLE False
+* XDEBUG_AUTOSTART False
+* XDEBUG_IDEKEY *complex*
+
+Use these like `docker run -d -p 8000:80 -p 9001:9001 -e XDEBUG_ENABLE=true bananaacid/docker-php7.2-kitematic`.
+The 9001 port is the Xdebug communication port.
+
+Or set them in Kitematic `Settings -> General -> Environment Variables`.
+
+
 ----------------------------------
 # Direct download links (official)
 
@@ -104,6 +122,7 @@ https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe
 MAC
 https://download.docker.com/mac/stable/Docker.dmg
 
+
 ----------------------------------
 # Improvements
 
@@ -111,6 +130,7 @@ Based on the work of:
 
 * Phil Plückthun, 'docker-php-kitematic'
 * Fernando Mayo <fernando@tutum.co>, 'apache-php'
+
 
 ... over docker-php-kitematic
 ----------------------------------
@@ -123,7 +143,7 @@ The following things were added/changed:
 * webpage placeholder has a link to an added phpinfo file
 * makefile configured to be used for building the image and testing it
 * SSL added, certificates are exchangeable
-
+* XDebug for optional use added
 
 
 ... over apache-php
