@@ -54,11 +54,11 @@ Any errors will be shown in the container logs area (Apache logs and PHP error l
 Manual usage
 ------------------------------------
 
-To grap it from the online repository and use it right away:
+To grap it from the online repository (if not yet pulled) and use it right away:
 
-	docker run -p 8000:80 -p 8443:443 --volume ~/my-php-app:/all  bananaacid/docker-php7.2-kitematic
+	docker run -p 8000:80 -p 8443:443 --volume ~/my-php-app:/app  bananaacid/docker-php7.2-kitematic
 
-to control it with Kitematic, use:
+to control it with Kitematic, only configure basics (`-p` is optional; Kitematic would assign random ports), use:
 
 	docker run -d -p 8000:80 -p 8443:443 bananaacid/docker-php7.2-kitematic
 
